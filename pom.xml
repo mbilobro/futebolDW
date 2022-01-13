@@ -12,7 +12,7 @@
 	<artifactId>futebol</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>futebol</name>
-	<description>Projeto para gerenciar pagamentos de mensalistas de um futebol society.</description>
+	<description>Projeto desenvolvido para controle de pagamentos de mensalistas de um futebol.</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
