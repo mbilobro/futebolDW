@@ -2,6 +2,7 @@ package dw.futebol.model;
 
 import javax.persistence.*;
 
+
 @Entity
 @Table(name = "pagamento")
 
@@ -23,6 +24,10 @@ public class Pagamento {
     @ManyToOne
     @JoinColumn(name = "cod_jogador", nullable = false)
     private Jogador cod_jogador;
+
+    public Pagamento() {
+
+	}
 
     public Pagamento(short ano, short mes, double valor, Jogador cod_jogador) {
         this.ano = ano;

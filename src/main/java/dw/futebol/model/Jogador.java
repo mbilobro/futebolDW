@@ -1,6 +1,8 @@
 package dw.futebol.model;
 
 import java.util.Date;
+import java.util.List;
+
 import javax.persistence.*;
 
 @Entity
@@ -17,8 +19,16 @@ public class Jogador {
     @Column(nullable = false, length = 60)
     private String email;
 
+    // @Column(columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     @Column(nullable = false)
     private Date data;
+
+    @OneToMany(mappedBy = "cod_jogador")
+    private List<Pagamento> pagamentos;
+
+    public Jogador() {
+
+	}
 
     public Jogador(String nome, String email, Date data) {
         this.nome = nome;

@@ -6,5 +6,5 @@ import java.util.List;
 import dw.futebol.model.Jogador;
 
 public interface JogadorRepository extends JpaRepository<Jogador, Integer> {
-    List<Jogador> findByTituloContaining(String nome);
+    List<Jogador> findByNomeContaining(String nome);
 }
